@@ -292,7 +292,7 @@ export default function Home() {
         return;
       }
 
-      let color = COLOR.blue;
+      let color: string = COLOR.blue;
       if (target.start && diffMs > 5 * 60 * 1000) {
         const half = target.start.getTime() + (target.due.getTime() - target.start.getTime()) / 2;
         if (now.getTime() >= half) color = COLOR.yellow;
